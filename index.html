@@ -10,6 +10,7 @@
     <link rel="stylesheet" media="all" href="css/app.css" />
     <style>
       .done {
+        
         display: none;
       }
       .load_screen
@@ -34,8 +35,8 @@
 
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
-          width: 100%;
-          height: 100%;
+          width: 200px;
+          height: 200px;
 
           -webkit-transform: translate(-50%,-50%);
               -ms-transform: translate(-50%,-50%);
@@ -98,16 +99,22 @@
               opacity: 1;
           }to
           {
-              width: 30%;
-              height: 30vh;
+              width: 100%;
+              height: 100%;
 
-              opacity: 0;
+              opacity: 0;;
               border: 2px solid #e02727;
-              -webkit-box-shadow: 0 0 30px #e02727;
-                      box-shadow: 0 0 30px #e02727;
+              -webkit-box-shadow: 0 0 10px #e02727;
+                      box-shadow: 0 0 10px #e02727;
           }  
     
     </style>
+    <!--     <script>
+      window.addEventListener("load", function(){
+        var load_screen = document.getElementById("load_screen");
+        document.body.removeChild(load_screen);
+      });
+    </script> -->
     <script>
       document.addEventListener("DOMContentLoaded", function()
       {
